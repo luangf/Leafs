@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Spring Project</title>
+	<link rel="stylesheet" type="text/css" href="css/keyframes-animations.css">
+	<link rel="stylesheet" type="text/css" href="css/index-style.css">
+</head>
+<body>
+
+	<div class="main-container">
+		<nav id="nav">
+	    	<a href="#" type="button">Go Up &uarr;</a>
+		</nav>
+	
+		<form>
+			<div class="field-info">
+	    		<label for="id">ID:</label>
+	    		<input type="text" id="id" readonly="readonly" placeholder="-- ID --">
+	 		</div>
+		
+			<div class="field-info">
+				<label for="email">Email address:</label>
+				<input type="email" id="email" placeholder="Your e-mail" required="required">
+				<div id="email-help" style="margin-top: 0.25rem;">We'll never share your email with anyone else.</div>
+			</div>
+			
+			<div class="field-info">
+				<label for="name" class="form-label">Name:</label>
+				<input type="text" class="form-control" id="name" placeholder="Your name" required="required">
+			</div>
+			
+			<div class="field-info">
+				<label for="password">Password:</label>
+				<input type="password" id="password" placeholder="Your password" required="required">
+			</div>
+			
+			<div>
+				<input type="checkbox" id="check">
+				<label for="check">Show/Hide Password</label>
+			</div>
+			
+			<button type="submit" onclick="saveUser()">Save</button>
+		</form>
+	</div>
+	
+	<button onclick="showAllLeafs()" id="div-show-all-leafs">Show All Leafs Bellow &#8595;</button>
+	<div id="leaf-container"></div>
+	
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

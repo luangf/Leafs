@@ -1,0 +1,160 @@
+@import
+	url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')
+	;
+
+:root {
+	--green: #5FAD56;
+	--orange: #FF9F1C;
+	--beige: #EDE3E9;
+	--light-blue: #4A8FE7;
+	--dark-blue: #5C7AFF;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url("/project/assets/nature.jpg");
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	font-family: 'Roboto', sans-serif;
+	font-size: 1.2rem;
+}
+
+.main-container {
+	position:fixed;
+	margin: 1.2rem;
+	width:500px;
+	max-width: 700px;
+}
+
+nav {
+	display: flex;
+	justify-content: center;
+	gap: 1.2rem;
+	padding: .625rem;
+	background: var(--light-blue);
+	border: .125rem solid black;
+	border-radius: 1.2rem 1.2rem 0 0;
+}
+
+a {
+	border: .125rem solid black;
+	border-radius: 1.2rem;
+	padding: 1.2rem;
+	text-decoration: none;
+	color: black;
+	background: var(--dark-blue);
+	box-shadow: 0px 0px 3px black;
+}
+
+a:hover {
+	color: white;
+	box-shadow: 0px 0px 6px black;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+	padding: .625rem;
+	background: #96be48;
+	border: .125rem solid black;
+	border-radius: 0 0 1.2rem 1.2rem;
+}
+
+.field-info {
+	padding: .625rem;
+	border: .125rem solid black;
+	border-radius: 1.2rem;
+	box-shadow: 0px 0px 3px black;
+}
+
+.field-info input {
+	display: block;
+	width: 100%;
+	padding: .625rem;
+	border: .125rem solid black;
+	border-radius: 1.2rem;
+	outline: none;
+	box-shadow: 0px 0px 3px black;
+}
+
+.field-info input:hover {
+	border: .125rem solid var(--green);
+}
+
+#email-help {
+	color: white;
+	font-size: .8rem;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+}
+
+form button {
+	padding: 1.2rem;
+	background: #4d4814;
+	font-size: 1.2rem;
+	color: white;
+	border: .125rem solid black;
+	border-radius: 1.2rem;
+}
+
+form button:hover {
+	color: #bec5a9;
+	box-shadow: 0px 0px 3px black;
+}
+
+form button:active {
+	box-shadow: 0px 0px 6px black;
+}
+
+#div-show-all-leafs {
+	position: absolute;
+	top: 1.2rem;
+	right: 350px;
+	font-size: 2rem;
+	background: #a5cf4e;
+	border: .125rem solid black;
+	border-radius: 1.2rem;
+	box-shadow: 0px 0px 3px black;
+	padding: .625rem;
+}
+
+#div-show-all-leafs:hover{
+	background: #769545;
+}
+
+#div-show-all-leafs:active{
+	background: #a5cf4e;
+}
+
+/*
+#leaf-container{
+	position: absolute;
+	top: 100px;
+	right: 350px;
+}
+*/
+
+/*
+img {
+	position: absolute;
+	top: 100px;
+	right: 350px;
+}
+*/
+
+img:hover {
+	animation: jello-horizontal 0.9s both;
+}
+
+img:active {
+	animation: wobble-hor-bottom 0.8s both;
+}

@@ -64,15 +64,13 @@ public class IndexController {
 	@PutMapping("/") // Update too already
 	public ResponseEntity<?> updateUser(@RequestBody UserDB userDB){ // type ? generic
 		if(userDB.getId() == null) {
-			return new ResponseEntity<String>("ID missing", HttpStatus.OK);
+			return new ResponseEntity<String>("ID missing", HttpStatus.BAD_REQUEST);
 		}
 		
-		UserDB user = userDBRepository.save(userDB);
-		return new ResponseEntity<UserDB>(userDB, HttpStatus.OK);
+		return new ResponseEntity<UserDB>(userDBRepository.save(userDB), HttpStatus.OK);
 	}
 	
-	/* wrong way with @PathVariable... because it goes in the url
-	 * api must be independent, hide parameters...
+	/* wrong way with @PathVariable... because it goes in the url, api must be independent, hide parameters...
 	@DeleteMapping("/{idUser}")
 	public ResponseEntity<String> deleteUserById(@PathVariable Long idUser){
 		userDBRepository.deleteById(idUser);

@@ -1,8 +1,7 @@
 const password = document.getElementById('password');
 const checkbox = document.getElementById('check');
 const email = document.getElementById('email');
-const name = document.getElementById('name');
-
+const nameUser = document.getElementById('name');
 
 let users=[];
 // pick all user
@@ -22,18 +21,28 @@ checkbox.addEventListener('change', function() {
 	}
 });
 
+function thereIsInput(input){
+	if(input.value !== null && input.value.trim() !== ''){
+		return true;
+	}else{
+		return false;
+	}
+}
+
 function saveUser() {
-	fetch('/project/user/', {
-		method: 'POST',
-		headers: {
-			'Content-Type': 'application/json'
-		},
-		body: JSON.stringify({
-			name: name.value,
-			email: email.value,
-			password: password.value
-		})
-	})
+	if(thereIsInput(email) && thereIsInput(nameUser) && thereIsInput(password)){
+		fetch('/project/user/', {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json'
+			},
+			body: JSON.stringify({
+				name: nameUser.value,
+				email: email.value,
+				password: password.value
+			})
+		});
+	}
 }
 
 function showAllLeafs(){

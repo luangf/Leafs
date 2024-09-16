@@ -47,8 +47,7 @@ public class IndexController {
 	}
 	*/
 	
-	// testing 02 exclude branch
-	// testing new branch
+	// testing integration git after deleting branch
 	// The real thing here below: --->
 	@GetMapping("/")
 	@ResponseBody //worked without...

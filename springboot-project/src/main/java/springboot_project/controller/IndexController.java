@@ -47,7 +47,7 @@ public class IndexController {
 	}
 	*/
 	
-	// testing exclude branch
+	// testing 02 exclude branch
 	// testing new branch
 	// The real thing here below: --->
 	@GetMapping("/")

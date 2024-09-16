@@ -47,6 +47,7 @@ public class IndexController {
 	}
 	*/
 	
+	// testing new branch
 	// The real thing here below: --->
 	@GetMapping("/")
 	@ResponseBody //worked without...

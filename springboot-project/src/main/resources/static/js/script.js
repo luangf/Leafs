@@ -4,6 +4,7 @@ const email = document.getElementById('email');
 const nameUser = document.getElementById('name');
 
 let users=[];
+
 // pick all user
 fetch('/project/user/')
 	.then(response => response.json())

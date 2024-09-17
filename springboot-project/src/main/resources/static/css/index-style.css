@@ -19,7 +19,7 @@
 body {
 	background-image: url("/project/assets/nature.jpg");
 	background-position: center;
-	background-size: cover;
+	background-size: 100vw 100vh;
 	background-attachment: fixed;
 	height: 100vh;
 	font-family: 'Roboto', sans-serif;
@@ -136,21 +136,14 @@ form button:active {
 	background: #a5cf4e;
 }
 
-/*
-#leaf-container{
-	position: absolute;
-	top: 100px;
-	right: 350px;
-}
-*/
 
-/*
-img {
-	position: absolute;
-	top: 100px;
+#leaf-container{
 	right: 350px;
 }
-*/
+
+img {
+	right: 350px;
+}
 
 img:hover {
 	animation: jello-horizontal 0.9s both;
@@ -158,4 +151,34 @@ img:hover {
 
 img:active {
 	animation: wobble-hor-bottom 0.8s both;
+}
+
+
+@media (max-width: 1731px) {
+	#div-show-all-leafs{
+		right: 150px;
+	}
+	
+	#leaf-container{
+		right: 150px !important;
+	}
+	
+	img {
+		right: 150px !important;
+	}
+	
+	span{
+		right: 300px !important;
+	}
+}
+
+@media (max-width: 1058px) {
+	#div-show-all-leafs{
+		top: 700px;
+		right: 150px;
+	}
+	
+	#leaf-container{
+		/*top: 750px !important;*/
+	}
 }

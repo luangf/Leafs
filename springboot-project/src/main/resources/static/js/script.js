@@ -46,12 +46,35 @@ function saveUser() {
 	}
 }
 
+function getTopPosition() {
+    let screenWidth = window.innerWidth;
+    
+    if (screenWidth <= 1058) {
+        return 780; 
+    } else {
+        return 100;
+    }
+}
+
+let lastScreenWidth = window.innerWidth;
+window.addEventListener('resize', function() {
+    const screenWidth = window.innerWidth;
+    const breakpoint = 1058;
+
+    if ((lastScreenWidth <= breakpoint && screenWidth > breakpoint) ||
+        (lastScreenWidth > breakpoint && screenWidth <= breakpoint)) {
+        showAllLeafs();
+    }
+
+    lastScreenWidth = screenWidth;
+});
+
 function showAllLeafs(){
 	const leafContainer = document.getElementById('leaf-container');
 	leafContainer.innerHTML = '';
 	
-	let topPosition = 100; // first leaf start here
-	let topPositionSpan = 250; // first span start here
+	let topPosition = getTopPosition(); // first leaf start here
+	let topPositionSpan = getTopPosition()+150; // first span start here
 	
 	users.forEach(user => {
 		const img = document.createElement('img');

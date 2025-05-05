@@ -1,5 +1,3 @@
-It's my own project.
-
 Stack: Java / Spring Boot / REST API / Microservices / JPA / Hibernate / HTML / CSS / JS / PostgreSQL
 
 It is possible to add users in the form of leaves in a tree, their name is visible on the leaf.

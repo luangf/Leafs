@@ -1,4 +1,4 @@
-I made this project with the objective to add users in the form of leaves in a tree, their name is visible on the leaf, The person saves the user in the database through the front form, then the api that queries the users in the database is called as they are added.
+I made this project with the objective to add users in the form of leaves in a tree, their name is visible on the leaf. The person saves the user in the database through the front form, then the api that queries the users in the database is called as they are added.
 
 Back End:
 * Java / Spring Boot / REST API / Microservices / JPA / Hibernate, PostgreSQL

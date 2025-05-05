@@ -2,8 +2,10 @@ I made this project with the objective to add users in the form of leaves in a t
 
 Back End:
 * Java / Spring Boot / REST API / Microservices / JPA / Hibernate, PostgreSQL
+
 Front End:
 * HTML / CSS / JS
+
 Tools:
 * Postman (Test API) / Git / Github / Spring Tool Suite IDE
 
